@@ -24,7 +24,18 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.2.3.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <org.mapstruct.version>1.4.1.Final</org.mapstruct.version>
+        <org.projectlombok.version>1.18.12</org.projectlombok.version>
     </properties>
+
+    <!--  github的maven中央仓库包  下载不下来的话直接拷进本地maven  -->
+    <repositories>
+        <repository>
+            <id>my</id>
+            <name>my</name>
+            <url>https://raw.github.com/chenqi146/maven-repo/master/</url>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
